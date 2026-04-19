@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+
+#calculadora {
+  width: 212px;
+  height: auto;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+#tela-resultado {
+  background-color: rgb(194, 194, 194);
+  border-bottom: 1px solid black;
+  width: auto;
+  height: 60px;
+  text-align: right;
+  margin: 0;
+  font-size: 50px;
+}
+
+#botoes {
+  margin-bottom: 1px;
+}
+
+.botao {
+  width: 50px;
+  height: 50px;
+}
+
+.numero {
+  width: 68px;
+  height: 60px;
+}
+
+#zero {
+  height: 70px;
+  width: 212px;
+}
