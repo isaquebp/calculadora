@@ -16,15 +16,17 @@ let sete = document.getElementById('sete')
 let oito = document.getElementById('oito')
 let nove = document.getElementById('nove')
 let zero = document.getElementById('zero')
-let texto = ''
+let texto = document.getElementById('tela-resultado')
+texto = ''
 
 multiplicacao.addEventListener('click', function multiplicacao() {
-  let multiplicacao = document.getElementById('tela-resultado').innerHTML += '*'
-  return texto += '*'
+  let tela = document.getElementById('tela-resultado').innerHTML += '*'
+  texto += '*'
 })
 
 divisao.addEventListener('click', function divisao() {
   let = document.getElementById('tela-resultado').innerHTML += '/'
+  texto += '/'
 })
 
 apagarTudo.addEventListener('click', function apagarTudo() {
@@ -32,22 +34,27 @@ apagarTudo.addEventListener('click', function apagarTudo() {
   texto = ''
 })
 backspace.addEventListener('click', function backspace() {
-  let = document.getElementById('tela-resultado').innerHTML = 'bs'
+  let tela = document.getElementById('tela-resultado')
+  texto = texto.slice(0, -1)
+  tela.innerHTML = texto
+
 })
 adicao.addEventListener('click', function adicao() {
   let = document.getElementById('tela-resultado').innerHTML += '+'
+  texto += '+'
 })
 subtracao.addEventListener('click', function subtracao() {
   let = document.getElementById('tela-resultado').innerHTML += '-'
+  texto += '-'
 })
 virgula.addEventListener('click', function virgula() {
   let = document.getElementById('tela-resultado').innerHTML += '.'
+  texto += '.'
 })
 igual.addEventListener('click', function igual() {
-  resultado = Function("return " + texto)()
   let igual = document.getElementById('tela-resultado')
+  resultado = Function("return " + texto)()
   igual.innerHTML = `${resultado}`
-  texto = 0
 })
 um.addEventListener('click', function um() {
   let = document.getElementById('tela-resultado').innerHTML += '1'
